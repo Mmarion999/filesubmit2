@@ -59,8 +59,178 @@
           </select>
         </label>
       </label>
-     <input type="text" name="name" required>
-    
+      
+    <h4 style="color: #853650;">Personal details</h4>
+      <div>
+        <label>First Name<span class="red"><strong>*</strong></span>:
+          <input id="First Name" name="First Name" placeholder="First name only" required="" autofocus="" type="text">
+        </label>
+      </div>
+      <div>
+        <label>Last Name<span class="red"><strong>*</strong></span>:
+          <input id="Last Name" name="Last Name" placeholder="Last name only" required="" autofocus="" type="text">
+        </label>
+      </div>
+      <div>
+        <label>Email<span class="red"><strong>*</strong></span>:
+          <input id="Email" name="Email" placeholder="example@norwich.edu" required="" type="email">
+        </label>
+      </div>
+      <div>
+        <label>Phone:
+          <input id="Phone" name="Phone" placeholder="(888)-222-4444" type="Phone">
+        </label>
+      </div>
+	  <h4 style="color: #853650;">Where should this change be made?</h4>
+       
+        <label for="course_name">
+          <label for="course_name">Course Name:
+            <input class="defaultInputLarge" id="Course Name" name="Course Name" value=" " type="text">
+            <br>
+          </label>
+        </label>
+        <div>
+          <label for="seminar_name">Course<span class="red">*</span>:
+            <input class="defaultInputLarge" id="Seminar Name" name="URL" placeholder="Course Name or URL" required="" type="text">Copy the url of the course located in the address bar of your browser and paste it in the field: (example: https://myonline.norwich.edu/course/view.php?id=282)</label>
+        </div>
+        <label for="course_name">
+          <label for="course_name">
+            <br>
+            <label for="page">Location<span class="red">*</span>:
+              <select required="" autofocus="" name="Location">
+                <option value="">Pick Location</option>
+                <option value="Top Section">Top Section</option>
+                <option value="Syllabus">Syllabus</option>
+                <option value="Required Readings">Required Readings</option>
+                <option value="Guidelines">Guidelines</option>
+                <option value="Rubrics">Rubrics</option>
+                <option value="Writing Resources">Writing Resources</option>
+                <option value="Week 1">Week 1</option>
+                <option value="Week 2">Week 2</option>
+                <option value="Week 3">Week 3</option>
+                <option value="Week 4">Week 4</option>
+                <option value="Week 5">Week 5</option>
+                <option value="Week 6">Week 6</option>
+                <option value="Week 7">Week 7</option>
+                <option value="Week 8">Week 8</option>
+                <option value="Week 9">Week 9</option>
+                <option value="Week 10">Week 10</option>
+                <option value="Week 11">Week 11</option>
+                <option value="Calendar">Calendar</option>
+                <option value="Gradebook ">Gradebook</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+            <br>
+            <label for="section">Sub-Location:
+              <select name="Sub-Location">
+                <option selected="selected" value="0"></option>
+                <option value="Overview">Overview</option>
+                <option value="Learning Objectives">Learning Objectives</option>
+                <option value="Planning Ahead">Planning Ahead</option>
+                <option value="Lecture">Lecture</option>
+                <option value="Discussion">Discussion</option>
+                <option value="Assignment">Assignment</option>
+                <option value="Exam/Quiz">Exam/Quizzes</option>
+                <option value="Media">Media</option>
+                <option value="Other">Other</option>
+              </select>(if applicable)</label>
+            <label for="additional_info">
+              <br>Additional Information (Explain the problem in your own words):
+              <br>
+              <input value="" name="Additional Info" id="Additional Info" class="defaultInput" type="text">
+              <br>
+            </label>
+          </label>
+        </label>
+        <h4 style="color: #853650;">Scope<span class="red">*</span></h4>
+        <label for="course_name">
+          <label for="course_name">
+            <label for="Corrections">
+              <input style="display: inline;" class="inputRadio" name="Scope" value="Corrections" type="radio"> <strong>Corrections:</strong> (spelling and grammar errors, and/or incorrect information)</label>
+            <label for="Broken">
+              <input style="display: inline;" class="inputRadio" name="Scope" value="Broken Links" type="radio"> <strong>Broken Links</strong> (This will be completed by an APD. Report the broken link to the program APD via email.)</label>
+          </label>
+        </label>
+        <h4 style="color: #853650;">Priority<span class="red">*</span></h4>
+        <label for="course_name">
+          <label for="course_name">
+            <label for="Critical">
+              <input value="CRITICAL: Current Running Seminar" name="Priority" class="inputRadio" style="display: inline;" type="radio">Modify currently-running seminar and master <em><strong>immediately</strong></em>.</label>
+            <label for="nonCritical">
+              <input style="display: inline;" class="inputRadio" name="Priority" value="Non-critical: Modify Master before next start date" type="radio">Modify master seminar before next start date.</label>
+          </label>
+        </label>
+        <h4 style="color: #853650;">Change to be completed</h4>
+        <p>*If you need to attach a file to this change please contact your ID.</p>
+        <label for="course_name">
+          <label for="course_name">
+            <label for="course_name">
+              <label for="typeofchange">
+                <label for="typeofchange"> <strong>Old/New Text listed in this change form.</strong> 
+                  <label style="display: none;" for="included text">
+                    <input id="old-new-text" value="Old/New text included on form" name="actual_change" class="inputRadio" style="display: inline;" type="radio"><strong>Old/New Text listed in change form</strong> 
+                  </label>
+                  <br>
+                  <label for="Old Verbiage"></label>
+                </label>
+              </label>
+            </label>
+          </label>
+        </label>
+        <p>Old (existing) text:</p>
+        <label for="course_name">
+          <label for="course_name">
+            <label for="course_name">
+              <label for="typeofchange">
+                <label for="typeofchange">
+                  <label for="Old Verbiage"></label>
+                  <br>
+                  <textarea id="old-text" onfocus="setRadio(this.id)" rows="13" cols="60" name="Old Verbiage"></textarea>
+                  <label for="New Verbiage">
+                    <br>
+                  </label>
+                </label>
+              </label>
+            </label>
+          </label>
+        </label>
+        <p>New text:</p>
+        <label for="course_name">
+          <label for="course_name">
+            <label for="course_name">
+              <label for="typeofchange">
+                <label for="typeofchange">
+                  <label for="New Verbiage">
+                    <br>
+                  </label>
+                  <textarea id="new-text" onfocus="setRadio(this.id)" name="New Verbiage" rows="13" cols="60"></textarea>
+                  <br>
+                  <label for="Suggestions">
+                    <br>
+                  </label>
+                </label>
+              </label>
+            </label>
+          </label>
+        </label>
+        <p>Suggestions:</p>
+        <label for="course_name">
+          <label for="course_name">
+            <label for="typeofchange">
+              <label for="typeofchange">
+                <label for="Suggestions">
+                  <br>
+                </label>
+                <textarea id="Suggestions" onfocus="setRadio(this.id)" name="Suggestions" rows="13" cols="60"></textarea>
+                <br>
+              </label>
+            </label>
+          </label>
+        </label>
+	 
+	 
+	 
      <button type="submit">Send</button>
 </form> 
 
